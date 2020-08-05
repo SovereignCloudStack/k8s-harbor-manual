@@ -1,0 +1,32 @@
+expose:
+  ingress:
+    hosts:
+      core: harbor.scs-kaas-infra-poc-rancher.81.163.192.65.xip.io
+      notary: notary.scs-kaas-infra-poc-rancher.81.163.192.65.xip.io
+  type: ingress
+  tls:
+    enabled: true
+persistence:
+  enabled: true
+  persistentVolumeClaim:
+    registry:
+      storageClass: "longhorn"
+    chartmuseum:
+      storageClass: "longhorn"
+    jobservice:
+      storageClass: "longhorn"
+    database:
+      storageClass: "longhorn"
+    redis:
+      storageClass: "longhorn"
+    trivy:
+      storageClass: "longhorn"
+externalURL: https://harbor.scs-kaas-infra-poc-rancher.81.163.192.65.xip.io
+chartmuseum:
+  enabled: true
+clair:
+  enabled: true
+trivy:
+  enabled: true
+notary:
+  enabled: true
