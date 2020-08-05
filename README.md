@@ -1,7 +1,15 @@
 # k8s-harbor
 
-Go to https://harbor.scs-kaas-infra-poc-rancher.81.163.192.65.xip.io
+## Prerequisties
 
-We currently only have one project: scs-poc with the administrative user scs-admin:SCS-admin-12345
+- internet access
+- access to Kubernetes cluster with a kubeconfig that can create namespaces and resources
+- installed helm binary in PATH
 
-With these credentials repositories can be created and used for container images.
+## Installation
+
+- run install.sh to add the helm repository, create the namespace and install harbor via helm with passing the values.yaml file
+
+## notes
+
+The current version requires a Storage Class with the name longhorn. If another Storage Class should be used the values.yaml must be changed accordingly.
