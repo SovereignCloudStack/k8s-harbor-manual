@@ -1,5 +1,7 @@
 # k8s-harbor
 
+based on https://github.com/goharbor/harbor-helm
+
 ## Prerequisties
 
 - internet access
@@ -12,4 +14,4 @@
 
 ## notes
 
-The current version requires a Storage Class with the name longhorn. If another Storage Class should be used the values.yaml must be changed accordingly.
+The current version requires a default Storage Class. If another Storage Class should be used the values.yaml must be changed accordingly.
