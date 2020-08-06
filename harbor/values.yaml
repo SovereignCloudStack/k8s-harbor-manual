@@ -10,17 +10,17 @@ persistence:
   enabled: true
   persistentVolumeClaim:
     registry:
-      storageClass: "longhorn"
+      storageClass: "default"
     chartmuseum:
-      storageClass: "longhorn"
+      storageClass: "default"
     jobservice:
-      storageClass: "longhorn"
+      storageClass: "default"
     database:
-      storageClass: "longhorn"
+      storageClass: "default"
     redis:
-      storageClass: "longhorn"
+      storageClass: "default"
     trivy:
-      storageClass: "longhorn"
+      storageClass: "default"
 externalURL: https://harbor.scs-kaas-infra-poc-rancher.81.163.192.65.xip.io
 chartmuseum:
   enabled: true
